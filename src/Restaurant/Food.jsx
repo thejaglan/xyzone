@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import "./style.css";
 import Menu from "./MenuApi.js";
 import MenuCard from './MenuCard';
@@ -17,7 +17,7 @@ console.log(uniqueList);
 
 const Food = () => {
     const [menuData, setMenuData] = useState(Menu);
-    const [menuList, setmenuList] = useState(uniqueList);
+    const [menuList, setMenuList] = useState(uniqueList);
 
     const filterItem = (category) => {
         const updatedList = Menu.filter((curElem) => {
@@ -37,3 +37,4 @@ const Food = () => {
     );
 };
 export default Food;
+
